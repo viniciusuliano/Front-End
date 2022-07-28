@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+}
+
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 30px;
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  max-width: 550px;
+  margin: 0 auto  ;
+  border-radius: 8px;
+  box-shadow: 0px 0px  14px 1px #00000024;
+  overflow: hidden;
+}
+
+
+.text {
+  padding: 30px;
+}
+
+.text1 {
+  background-color: white;
+}
+
+.text1 h2 {
+  color:hsl(179, 62%, 43%);
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.text1 h3 {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.text1 p {
+  color: hsl(218, 22%, 67%);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+
+.text2 {
+  background-color: hsl(179, 62%, 43%);
+}
+
+.text2 h3 {
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.text2 p {
+  color: hsl(204, 43%, 93%);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.text2 p span {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.text2 .button {
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+  background-color: hsl(71, 73%, 54%);
+  display: inline-block  ;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  font-weight: 700px;
+  box-shadow: 0px 0px  14px 1px #00000024;
+  border-radius: 10px;
+}
+
+.text2 .button:hover {
+  color: #4abebd;
+
+}
+
+.text3 {
+  background-color: #4abebd;
+}
+
+.text3 h3 {
+
+  color: white;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.text3 p {
+  color: hsl(204, 43%, 93%);
+  line-height: 1.5rem;
+}
+
+@media only screen and (min-width:768px ) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .text1 {
+    grid-area: 1/1/2/3;
+  }
+  .text2,
+  .text3 {
+    grid-row: 2;
+  }
+}
